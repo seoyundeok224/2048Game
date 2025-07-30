@@ -1,0 +1,50 @@
+/* body를 flex 컨테이너로 설정하여 세로방향으로 정렬하고 가운데 맞춤 */
+body {
+  display: flex; /* 요소들을 flexbox 레이아웃으로 배치 */
+  flex-direction: column; /* 위에서 아래 방향으로 정렬 */
+  align-items: center; /* 가로 방향으로 가운데 정렬 */
+  justify-content: flex-start; /* 세로 방향으로 위쪽에 정렬 */
+  min-height: 100vh; /* 화면 높이만큼 최소 높이 설정 */
+  margin: 0; /* 브라우저 기본 여백 제거 */
+  font-family: Arial, sans-serif; /* 본문 글꼴 설정 */
+}
+
+/* h3 제목 중앙 정렬 및 위쪽 여백 설정 */
+h3 {
+  text-align: center; /* 텍스트 가운데 정렬 */
+  margin-top: 20px; /* 위쪽 여백 20px */
+}
+
+/* 점수 표시 영역 스타일 */
+#score {
+  font-size: 24px; /* 글자 크기 */
+  margin-bottom: 10px; /* 아래 여백 */
+  text-align: center; /* 텍스트 가운데 정렬 */
+  width: 200px; /* 고정 너비 설정 */
+}
+
+/* 게임 보드 영역 정렬 및 크기 설정 */
+#game-board {
+  margin: 0 auto; /* 좌우 자동 마진으로 수평 가운데 정렬 */
+  width: max-content; /* 콘텐츠 크기에 맞게 너비 설정 */
+  display: flex; /* 내부 요소들을 flexbox로 정렬 */
+  flex-direction: column; /* 세로 방향 정렬 */
+  align-items: center; /* 가로 방향 가운데 정렬 */
+}
+
+/* 버튼 스타일 */
+button {
+  margin: 10px auto; /* 위아래 10px, 좌우 자동 정렬 */
+  display: block; /* 블록 요소로 설정하여 줄바꿈 적용 */
+  padding: 8px 16px; /* 안쪽 여백: 위아래 8px, 좌우 16px */
+  font-size: 16px; /* 글자 크기 설정 */
+  cursor: pointer; /* 마우스 커서를 포인터(손 모양)로 변경 */
+}
+
+/* 설명 문단 스타일 */
+p {
+  max-width: 400px; /* 최대 너비 400px로 제한 */
+  text-align: center; /* 텍스트 가운데 정렬 */
+  line-height: 1.5; /* 줄 간격 설정 */
+  margin: 20px auto; /* 위아래 20px 여백, 좌우 가운데 정렬 */
+}
